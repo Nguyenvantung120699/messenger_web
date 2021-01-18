@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
@@ -23,7 +23,3 @@ Route::get('/logout',function (){
     \Illuminate\Support\Facades\Auth::logout();
     return redirect()->to("/login");
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
